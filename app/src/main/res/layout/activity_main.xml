@@ -5,142 +5,79 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#e4f0f7"
     tools:context="com.example.calculator.MainActivity">
-
-    <LinearLayout
-        android:id="@+id/inputAreas"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="20dp"
-        android:orientation="vertical">
-
-        <EditText
-            android:id="@+id/numberOne"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:ems="10"
-            android:hint="Zahl eingeben"
-            android:inputType="number" />
-
-        <EditText
-            android:id="@+id/numberTwo"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:ems="10"
-            android:hint="Zahl eingeben"
-            android:inputType="number"
-
-            />
-    </LinearLayout>
 
 
     <TextView
         android:id="@+id/result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttons"
-        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="120sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:text=""
-        android:textSize="120sp" />
-
-    <LinearLayout
-        android:id="@+id/buttons"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/inputAreas"
-        android:layout_centerHorizontal="true">
+        android:orientation="horizontal"
+        android:textSize="60sp" />
 
 
-        <Button
-            android:id="@+id/add"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="#4e095b"
-            android:text="+"
-            android:textColor="#fff"
-            android:textSize="20dp" />
-
-
-        <Button
-            android:id="@+id/subtract"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_toRightOf="@id/add"
-            android:background="#4e095b"
-            android:text="-"
-            android:textColor="#fff"
-            android:textSize="20dp" />
-
-        <Button
-            android:id="@+id/multiply"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_toRightOf="@id/subtract"
-            android:background="#4e095b"
-            android:text="×"
-            android:textColor="#fff"
-            android:textSize="20dp" />
-
-        <Button
-            android:id="@+id/divide"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_toRightOf="@id/multiply"
-            android:background="#4e095b"
-            android:text="÷"
-            android:textColor="#fff"
-            android:textSize="20dp" />
-
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/buttons"
+        android:layout_below="@+id/result"
         android:layout_centerHorizontal="true"
         android:orientation="vertical">
+
 
         <LinearLayout
             android:id="@+id/row1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
 
             <Button
                 android:id="@+id/one"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="70sp"
+                android:layout_height="60sp"
                 android:layout_margin="10dp"
-                android:background="#4e095b"
+                android:background="#6f9ff7"
                 android:text="1"
                 android:textColor="#fff"
                 android:textSize="30dp" />
 
             <Button
                 android:id="@+id/two"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="70sp"
+                android:layout_height="60sp"
                 android:layout_margin="10dp"
-                android:background="#4e095b"
+                android:background="#6f9ff7"
                 android:text="2"
                 android:textColor="#fff"
                 android:textSize="30dp" />
 
             <Button
                 android:id="@+id/three"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="70sp"
+                android:layout_height="60sp"
                 android:layout_margin="10dp"
-                android:background="#4e095b"
+                android:background="#6f9ff7"
                 android:text="3"
                 android:textColor="#fff"
                 android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="70sp"
+                android:layout_height="60sp"
+                android:layout_margin="10dp"
+                android:background="#6f9ff7"
+                android:text="+"
+                android:textColor="#fff"
+                android:textSize="30dp" />
+
 
 
         </LinearLayout>
@@ -151,14 +88,14 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/row1"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="0dp">
 
             <Button
                 android:id="@+id/four"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="70sp"
+                android:layout_height="60sp"
                 android:layout_margin="10dp"
-                android:background="#4e095b"
+                android:background="#6f9ff7"
                 android:text="4"
                 android:textColor="#fff"
                 android:textSize="30dp"
@@ -167,23 +104,36 @@
 
             <Button
                 android:id="@+id/five"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="70sp"
+                android:layout_height="60sp"
                 android:layout_margin="10dp"
-                android:background="#4e095b"
+                android:background="#6f9ff7"
                 android:text="5"
                 android:textColor="#fff"
                 android:textSize="30dp" />
 
             <Button
                 android:id="@+id/six"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="70sp"
+                android:layout_height="60sp"
                 android:layout_margin="10dp"
-                android:background="#4e095b"
+                android:background="#6f9ff7"
                 android:text="6"
                 android:textColor="#fff"
                 android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/subtract"
+                android:layout_width="70sp"
+                android:layout_height="60sp"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@id/add"
+                android:background="#6f9ff7"
+                android:text="-"
+                android:textColor="#fff"
+                android:textSize="25dp" />
+
+
 
         </LinearLayout>
 
@@ -193,37 +143,48 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/row2"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="0dp">
 
             <Button
                 android:id="@+id/seven"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="70sp"
+                android:layout_height="60sp"
                 android:layout_margin="10dp"
-                android:background="#4e095b"
+                android:background="#6f9ff7"
                 android:text="7"
                 android:textColor="#fff"
                 android:textSize="30dp" />
 
             <Button
                 android:id="@+id/eight"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="70sp"
+                android:layout_height="60sp"
                 android:layout_margin="10dp"
-                android:background="#4e095b"
+                android:background="#6f9ff7"
                 android:text="8"
                 android:textColor="#fff"
                 android:textSize="30dp" />
 
             <Button
                 android:id="@+id/nine"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="70sp"
+                android:layout_height="60sp"
                 android:layout_margin="10dp"
-                android:background="#4e095b"
+                android:background="#6f9ff7"
                 android:text="9"
                 android:textColor="#fff"
                 android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/multiply"
+                android:layout_width="70sp"
+                android:layout_height="60sp"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@id/subtract"
+                android:background="#6f9ff7"
+                android:text="×"
+                android:textColor="#fff"
+                android:textSize="25dp" />
 
         </LinearLayout>
 
@@ -233,17 +194,49 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/row3"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="0dp">
 
             <Button
                 android:id="@+id/zero"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="70sp"
+                android:layout_height="60sp"
                 android:layout_margin="10dp"
-                android:background="#4e095b"
+                android:background="#6f9ff7"
                 android:text="0"
                 android:textColor="#fff"
                 android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/equals"
+                android:layout_width="70sp"
+                android:layout_height="60sp"
+                android:layout_margin="10dp"
+                android:background="#6f9ff7"
+                android:text="="
+                android:textColor="#fff"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/dot"
+                android:layout_width="70sp"
+                android:layout_height="60sp"
+                android:layout_margin="10dp"
+                android:background="#6f9ff7"
+                android:text="."
+                android:textColor="#fff"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/divide"
+                android:layout_width="70sp"
+                android:layout_height="60sp"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@id/multiply"
+                android:background="#6f9ff7"
+                android:text="÷"
+                android:textColor="#fff"
+                android:textSize="25dp" />
+
 
         </LinearLayout>
 
